@@ -1,15 +1,15 @@
 {
   "name": "brevt",
-  "module": "index.ts",
-  "type": "module",
   "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "typecheck": "bun check"
   },
   "devDependencies": {
     "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^7"
   }
 }
